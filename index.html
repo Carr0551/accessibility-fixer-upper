@@ -40,7 +40,7 @@
     <div>
       <div class="about push" id="about">
         <div class="embed embed-24by10">
-          <img class="embed-item" src="images/shrbs.jpg" alt="">
+          <img class="embed-item" src="images/shrubs.jpg" alt="">
         </div>
       </div>
       <div class="about-content pad-t-2 pad-b-2">
@@ -91,10 +91,10 @@
             <caption></caption>
             <thead>
               <tr>
-                <th class="" scope="col">&nbsp;</th>
-                <th class="small" scope="col">Small</th>
-                <th class="medium" scope="col">Medium</th>
-                <th class="large" scope="col">Large</th>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">Small</th>
+                <th scope="col">Medium</th>
+                <th scope="col">Large</th>
               </tr>
             </thead>
             <tbody>
@@ -152,16 +152,16 @@
 
         <form class="grid" method="post">
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">Your name</span>
-            <input>
+            <label for="name" class="push-1-8">Your name</label>
+            <input id="name">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">E-mail address</span>
-            <input>
+            <label for="email" class="push-1-8">E-mail address</label>
+            <input type="email" id="email">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">Type of shrubbery</span>
-            <select>
+            <label for="type" class="push-1-8">Type of shrubbery</label>
+            <select id="type">
               <option>Two-level shrubbery</option>
               <option>Small shrubbery</option>
               <option>Shrubbery with laurels</option>
@@ -175,11 +175,11 @@
       </div>
     </div>
   </main>
-  <div class="footer pad-t-1-2 pad-b-1-2">
+  <footer role="contentinfo" class="footer pad-t-1-2 pad-b-1-2">
     <div class="wrapper gutter-1-2">
       <p class="push-0 micro">Some quotes © <i>Monty Python and the Holy Grail</i>, 1975.</p>
     </div>
-  </div>
+  </footer>
 
 </body>
 </html>
